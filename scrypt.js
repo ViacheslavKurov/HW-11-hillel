@@ -35,10 +35,12 @@ class Employee extends Person {
     }
   }
 }
-const personInfo = new Person("Oleg", "Nichaev", 22, "1990-09-21");
-const employeeInfo = new Employee("Viacheslav", "Kurov", 31, "1992-10-11");
+const personInfo = new Person("Oleg", "Nichaev", 31, "1990-09-21");
+const employeeInfo = new Employee("Viacheslav", "Kurov", 30, "1992-10-11");
 
 console.log(employeeInfo);
 console.log(personInfo);
 console.log(employeeInfo.getYearSalary());
 employeeInfo.checkCelebrateDay();
+personInfo.celebrate()
+employeeInfo.celebrate()
