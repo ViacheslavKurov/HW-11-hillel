@@ -24,17 +24,17 @@ class Employee extends Person {
     let day = new Date().getFullYear();
     this.birthDayDate.setFullYear(day);
     let birthDay = this.birthDayDate;
-    function isWeekend(date) {
-      let checkWeekend = new Date(date).getDay();
-      return checkWeekend === 6 || checkWeekend === 0;
-    }
     if (isWeekend(birthDay) === true) {
-      console.log(super.celebrate());
+      super.celebrate();
     } else {
       console.log("Happy Birthday, but I need to work");
     }
   }
 }
+function isWeekend(date) {
+	let checkWeekend = new Date(date).getDay();
+	return checkWeekend === 6 || checkWeekend === 0;
+ }
 const personInfo = new Person("Oleg", "Nichaev", 31, "1990-09-21");
 const employeeInfo = new Employee("Viacheslav", "Kurov", 30, "1992-10-11");
 
