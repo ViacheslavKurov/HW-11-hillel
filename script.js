@@ -32,9 +32,9 @@ class Employee extends Person {
   }
 }
 function isWeekend(date) {
-	let checkWeekend = new Date(date).getDay();
-	return checkWeekend === 6 || checkWeekend === 0;
- }
+  let checkWeekend = new Date(date).getDay();
+  return checkWeekend === 6 || checkWeekend === 0;
+}
 const personInfo = new Person("Oleg", "Nichaev", 31, "1990-09-21");
 const employeeInfo = new Employee("Viacheslav", "Kurov", 30, "1992-10-11");
 
@@ -42,5 +42,5 @@ console.log(employeeInfo);
 console.log(personInfo);
 console.log(employeeInfo.getYearSalary());
 employeeInfo.checkCelebrateDay();
-personInfo.celebrate()
-employeeInfo.celebrate()
+personInfo.celebrate();
+employeeInfo.celebrate();
